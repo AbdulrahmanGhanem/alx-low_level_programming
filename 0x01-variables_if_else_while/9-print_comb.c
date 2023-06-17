@@ -13,7 +13,7 @@ int main(void)
 	int dgt;
 
 	for (dgt = 48; dgt <= 57; dgt++)
-		putchat(dgt);
+		putchar(dgt);
 		putchar(',');
 		putchar(' ');
 
