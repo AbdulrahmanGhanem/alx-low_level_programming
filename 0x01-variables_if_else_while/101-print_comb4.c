@@ -18,11 +18,15 @@ int main(void)
 		{
 			for (dgt3 = 0; dgt3 <= 9; dgt3++)
 			{
-				if (dgt1 != dgt2 != dgt3 && dgt1 < dgt2 < dgt3)
+				if (dgt1 != dgt2 &&
+					dgt1 < dgt2 &&
+					dgt2 != dgt3 &&
+					dgt2 < dgt3)
 				{
 					putchar('0' + dgt1);
 					putchar('0' + dgt2);
-					if (dgt1 + dgt2 != 24)
+					putchar('0' + dgt3);
+					if (dgt1 + dgt2 + dgt3 != 24)
 					{
 						putchar(',');
 						putchar(' ');
