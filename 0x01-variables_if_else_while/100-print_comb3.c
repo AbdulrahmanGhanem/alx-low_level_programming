@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Description: A C program that prints all combinations of two digits
+ *
+ * Return: Always 0 (Success)
+*/
+
+int main(void)
+{
+	int dgt1, dgt2;
+
+	for (dgt1 = 0; dgt1 <= 9; dgt1++)
+	{
+		for (dgt2 = 0; dgt2 <= 9; dgt2++)
+		{
+			if (dgt1 != dgt2 && dgt1 < dgt2)
+			{
+				putchar('0' + dgt1);
+				putchar('0' + dgt2);
+				if (dgt1 + dgt2 != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+
+	return (0);
+}
