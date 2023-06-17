@@ -13,9 +13,11 @@ int main(void)
 	int dgt;
 
 	for (dgt = 48; dgt <= 57; dgt++)
+	{
 		putchar(dgt);
 		putchar(',');
 		putchar(' ');
+	}
 
 	putchar('\n');
 
