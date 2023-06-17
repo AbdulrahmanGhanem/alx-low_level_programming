@@ -12,11 +12,15 @@ int main(void)
 {
 	int dgt;
 
-	for (dgt = 48; dgt <= 57; dgt++)
+	for (dgt = 0; dgt <= 9; dgt++)
 	{
-		putchar(dgt);
-		putchar(',');
-		putchar(' ');
+		putchar('0' + dgt);
+
+		if (dgt != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 
 	putchar('\n');
