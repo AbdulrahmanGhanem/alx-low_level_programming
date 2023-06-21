@@ -6,7 +6,7 @@
  * Description: A C program that prints the alphabet, in lowercase
 */
 
-void main(void)
+void print_alphabet(void)
 {
 	int letter;
 
