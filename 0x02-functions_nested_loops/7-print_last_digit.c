@@ -13,8 +13,9 @@ int print_last_digit(int n)
 	int lastDgt;
 
 	if (n < 0)
-		n = n * (-1);
-	lastDgt = n % 10;
+		lastDgt = (n % 10) * (-1);
+	else
+		lastDgt = n % 10;
 	_putchar(lastDgt + 48);
 	return (lastDgt);
 }
