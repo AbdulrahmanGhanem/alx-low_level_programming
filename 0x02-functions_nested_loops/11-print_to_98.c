@@ -8,13 +8,13 @@ include "main.h"
 
 void print_to_98(int n)
 {
-	int x;
+	int c;
 
 	if (n > 98)
-		for (x = n; x > 98; x--)
-			printf("%d, ", x);
+		for (c = n; c > 98; c--)
+			printf("%d, ", c);
 	else
-		for (x = n; x < 98; x++)
-			printf("%d, ", x);
+		for (c = n; c < 98; c++)
+			printf("%d, ", c);
 	printf("98\n");
 }
