@@ -18,8 +18,8 @@ char *leet(char *s)
 	{
 		for (k = 0; k < 10; k++)
 		{
-			if (s[i] == s1[i])
-				s[i] = s2[i];
+			if (s[i] == s1[k])
+				s[i] = s2[k];
 		}
 	}
 	return (s);
