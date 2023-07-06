@@ -27,9 +27,10 @@ int _sqrt_recursion(int n)
 
 int sqrt_root(int n, int x)
 {
-	if (x * x > n)
-		return (-1);
-	else if (x * x == n)
+	if (x * x == n)
 		return (x);
-	return (sqrt_root(n, x + 1));
+	else if (x * x < n)
+		return (sqrt_root(n, x + 1));
+	else
+		return (-1);
 }
