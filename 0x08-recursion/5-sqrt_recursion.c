@@ -9,10 +9,9 @@
  * Return: rooted number
 */
 
+int sqrt_root(int n, int x);
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-		return (-1);
 	return (sqrt_root(n, 1));
 }
 
