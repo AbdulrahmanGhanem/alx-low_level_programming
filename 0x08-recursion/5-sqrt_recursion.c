@@ -5,6 +5,7 @@
  * the natural square root of a number
  *
  * @n: input number
+ * @x: input number
  *
  * Return: rooted number
 */
