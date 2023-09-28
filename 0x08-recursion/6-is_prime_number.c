@@ -5,6 +5,7 @@
  * if the input integer is a prime number, otherwise return 0
  *
  * @n: input number
+ * @x: input number
  *
  * Return: 1 if prime, 0 otherwise
 */
