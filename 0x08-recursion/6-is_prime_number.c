@@ -27,9 +27,9 @@ int is_prime_number(int n)
 
 int if_prime(int n, int x)
 {
-	if (n >= 2 && x >= n)
+	if (x >= n && n > 1)
 		return (1);
-	else if (n % x || n < 2)
+	else if (n % x || n <= 1)
 		return (0);
 	else
 		return (if_prime(n, x + 1));
