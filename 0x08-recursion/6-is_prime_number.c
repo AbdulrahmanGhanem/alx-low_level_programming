@@ -9,6 +9,7 @@
  * Return: 1 if prime, 0 otherwise
 */
 
+int if_prime(int n, int x);
 int is_prime_number(int n)
 {
 	return (if_prime(n, 2));
