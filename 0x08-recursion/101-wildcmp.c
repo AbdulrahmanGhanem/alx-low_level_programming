@@ -50,7 +50,7 @@ int wildcmp(char *s1, char *s2)
 {
 	int r = 0;
 
-	if (!*s1 && *s2 == '*' && skip_asterisk(s2))
+	if (!*s1 && *s2 == '*' && !skip_asterisk(s2))
 		return (1);
 	if (*s1 == *s2)
 	{
