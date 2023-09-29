@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * index - counts the last index of string
+ * last_index - counts the last index of string
  *
  * @s: input string
  *
@@ -10,12 +10,12 @@
 
 int is_palindrome(char *s);
 int check(char *s, int st, int end, int equal);
-int index(char *s)
+int last_index(char *s)
 {
 	int n = 0;
 
 	if (*s > '\0')
-		n += index(s + 1) + 1;
+		n += last_index(s + 1) + 1;
 
 	return (n);
 }
@@ -30,7 +30,7 @@ int index(char *s)
 
 int is_palindrome(char *s)
 {
-	int end = index(s);
+	int end = last_index(s);
 
 	return (check(s, 0, end - 1, end % 2));
 }
