@@ -41,7 +41,7 @@ int inception(char *s1, char *s2)
  * wildcmp - a function that compares two strings
  *
  *@s1: input string
- @s2: input string
+ *@s2: input string
  *
  * Return: 1 if identical, 0 if false
  **/
